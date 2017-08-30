@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>My Name - My Job Title</title>
+
+        <!-- Materialize -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet" media="screen,projection">
+        
+        <link type="text/css" href="src/css/style.css" rel="stylesheet" />
+
+        <!-- Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=11" />
+
+        <!-- Open Graph tags for Social Media -->
+        <meta property="og:site_name" content="My Website Name" />
+        <meta property="og:title" content="My Name - My Job Title" />
+        <meta property="og:description" content="A simple and clean template for a professional web portfolio." />
+        <meta property="og:url" content="https://example.com" />
+        <meta property="og:image" content="https://example.com/img/headshot.jpg" />
+        <meta property="og:image" content="http://example.com/img/headshot.jpg" />
+
+    </head>
+
+    <body>
+        <main class="profile-card valign-wrapper">
+            <section class="row">
+                <figure class="scale-2 scale-transition scale-out row center-align">
+                    <img id="headshot" src="img/headshot.jpg" alt="Headshot Photo" class="circle col s6 offset-s3 m4 offset-m4 xl2 offset-xl5" />
+                </figure>
+                <figure class="scale-1 scale-transition scale-out container center-align">
+                    <i href="path/to/resume.pdf" class="material-icons medium tooltipped contact-icon" data-position="top" data-tooltip="Resume" data-delay="50">assignment</i>
+                    <img href="https://facebook.com/" class="tooltipped contact-icon" data-position="top" data-tooltip="Facebook" data-delay="50" src="img/facebook-box.svg" onerror="this.src='img/facebook-box.png'" width="60" height="60" />
+                    <img href="https://linkedin.com/" class="tooltipped contact-icon" data-position="top" data-tooltip="LinkedIn" data-delay="50" src="img/linkedin-box.svg" onerror="this.src='img/linkedin-box.png'" width="60" height="60" />
+                    <img href="https://github.com/" class="tooltipped contact-icon" data-position="top" data-tooltip="GitHub" data-delay="50" src="img/github-box.svg" onerror="this.src='img/github-box.png'" width="60" height="60" />                                        
+                    <div class="divider"></div>
+                    <h3>My Name</h3>
+                    <h4>My Job Title</h4>
+                </figure>
+                <figure class="row">
+                    <div for="#ui-details" class="scale-3 scale-transition scale-out hover-card col s12 m4">
+                        <div class="center">
+                            <i class="card-icon material-icons">dashboard</i>
+                            <span class="card-title">Skill Title</span>
+                            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas sem et metus suscipit hendrerit. Sed lobortis, est sed ultrices euismod, sem lorem tempus neque, id placerat odio ante sit amet libero. Donec dapibus lorem dictum, convallis odio porta, porta velit. Sed vitae eros tempus, pharetra lectus sit amet, mattis nibh. Morbi ut mauris at diam accumsan maximus.</p>
+                        </div>
+                    </div>
+                    <div class="construction scale-4 scale-transition scale-out hover-card col s12 m4">
+                        <div class="center">
+                            <i class="card-icon material-icons">settings</i>
+                            <span class="card-title">Skill Title</span>
+                            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas sem et metus suscipit hendrerit. Sed lobortis, est sed ultrices euismod, sem lorem tempus neque, id placerat odio ante sit amet libero. Donec dapibus lorem dictum, convallis odio porta, porta velit. Sed vitae eros tempus, pharetra lectus sit amet, mattis nibh. Morbi ut mauris at diam accumsan maximus.</p>
+                        </div>
+                    </div>
+                    <div class="construction scale-5 scale-transition scale-out hover-card col s12 m4">
+                        <div class="center">
+                            <i class="card-icon material-icons">code</i>
+                            <span class="card-title">Skill Title</span>
+                            <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas sem et metus suscipit hendrerit. Sed lobortis, est sed ultrices euismod, sem lorem tempus neque, id placerat odio ante sit amet libero. Donec dapibus lorem dictum, convallis odio porta, porta velit. Sed vitae eros tempus, pharetra lectus sit amet, mattis nibh. Morbi ut mauris at diam accumsan maximus.</p>
+                        </div>
+                    </div>
+                </figure>
+            </section>
+        </main>
+
+        <section id="ui-details" class="modal">
+            <div class="modal-content">
+                <h4>Skill Title</h4>
+                <p>Here are a few things I've done in the realm of Skill Title.</p>
+                <ul id="ui-list" class="collection">
+                    <li class="clickable-listitem collection-item avatar">
+                        <i class="material-icons circle">code</i>
+                        <span class="title">Project Name</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="https://link_to_project" class="secondary-content hide">Here is a link to this project.</a>
+                        <a href="https://link_to_project_src" class="secondary-content hide">Here is a link to more about this project.</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="follow-thru modal bottom-sheet">
+            <div class="modal-content">
+                <ul id='follow-list' class="collection">
+                    <li class="collection-item avatar">
+                        <i class="material-icons circle">web</i>
+                        <span class="title">View on the Web</span>
+                        <p></p>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img class="circle" src="img/github-box.svg" onerror="this.src='img/github-box.png'" />
+                        <span class="title">View on Github</span>
+                        <p></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Libraries -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+        <script type="text/javascript" src="src/js/main.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+html, body, .profile-card {
+    height: 100%;
+}
+.card-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.card-icon {
+    display: block;
+    font-size: 7rem;
+}
+.hover-fill {
+    color: #aec6cf;
+    transition: color 0.3s;
+}
+.hover-card:hover {
+    cursor: pointer;
+}
+.contact-icon:hover {
+    cursor: pointer;
+}
+.collection > li {
+    opacity: 0;
+}
+.clickable-listitem {
+    cursor: pointer;
+}
